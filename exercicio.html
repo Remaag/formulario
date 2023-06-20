@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    function DividirNumber () {
+    let number = prompt("Digite um valor para ser divido por 10");
+
+
+    try {
+        if (isNaN(number)) {
+            throw new Error ('Digite um numero valido');
+        }
+
+        let result = number / 10;
+
+        console.log (`${number} dividido por 10 resulta em ${result}`);
+
+
+    } catch (error) {
+        console.log('Ocorreu um erro', error.message);
+    }
+}
+
+DividirNumber();
+</script>
+</html>
